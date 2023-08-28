@@ -1,0 +1,21 @@
+/* Estilos generales para la barra de navegación */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Estilos para los enlaces */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos para el logo */
+nav img {
+  height: 40px;
+}
