@@ -6,10 +6,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 @NgModule({
   declarations: [AppComponent, NavbarComponent, HomeComponent],
-  imports: [BrowserModule, RouterModule.forRoot([]), BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot([]),
+    BrowserAnimationsModule,
+    CarouselModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

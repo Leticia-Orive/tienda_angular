@@ -33,3 +33,9 @@ CREAR UN HOME
    Instalamos la libreria de bootstrap
    ng add ngx-bootstrap
 3. Integrar el Carrusel de Imágenes
+   3.1 Importamos el módulo del carrusel en el módulo del componente home.
+   3.2 Utiliza el carrusel en el archivo HTML del componente home.
+4. Estilos CSS
+5. Navegación desde la Barra
+   Asegúrate de que el enlace en la barra de navegación para el "Home" esté correctamente configurado en tu archivo HTML de la barra de navegación.
+   <a routerLink="/home">Home</a>
