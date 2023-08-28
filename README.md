@@ -39,3 +39,14 @@ CREAR UN HOME
 5. Navegación desde la Barra
    Asegúrate de que el enlace en la barra de navegación para el "Home" esté correctamente configurado en tu archivo HTML de la barra de navegación.
    <a routerLink="/home">Home</a>
+
+CREAR EL INICIO DE SESION.
+
+1. Crear Componente Inicio de Sesión
+   ng generate component inicio-sesion
+2. Crear HTML para Inicio de Sesión
+   inicio-sesion.component.html
+3. Crear Componente TypeScript
+   inicio-sesion.component.ts
+4. Configurar Rutas
+   app-routing.module.ts
