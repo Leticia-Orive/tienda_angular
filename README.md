@@ -50,3 +50,18 @@ CREAR EL INICIO DE SESION.
    inicio-sesion.component.ts
 4. Configurar Rutas
    app-routing.module.ts
+
+CREAR EL REGISTRO
+
+1. Creación del Formulario de Registro
+   1.1 Crea un nuevo componente llamado RegistroComponent
+   ng generate component registro
+   1.2 Creamos un formulario en html
+2. Manejo del Registro
+   En el archivo TypeScript de RegistroComponent, define las propiedades nombre, correo y contraseña como lo hiciste en el formulario. También, en este componente, crea un método registrarUsuario() que se activará cuando el formulario se envíe. En este método, puedes realizar la lógica para registrar al usuario en tu sistema.
+3. Redirección después del Registro
+   Después de que el usuario haya sido registrado exitosamente en el servidor, puedes mostrar un mensaje al usuario indicando que se ha creado su cuenta. Luego, puedes redirigir automáticamente al usuario a la página de inicio de sesión.
+   Para redirigir al usuario, necesitarás inyectar el servicio Router en tu componente. Luego, puedes utilizar el método navigate() para redirigir a la página de inicio de sesión.
+4. Si tienes el error de que no se encuentra HttpClient
+   4.1 Abre el archivo del módulo donde estás utilizando HttpClient, por ejemplo, el archivo app.module.ts
+   4.2 Importa el módulo HttpClientModule desde @angular/common/http

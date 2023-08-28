@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroComponent } from './registro/registro.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     InicioSesionComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

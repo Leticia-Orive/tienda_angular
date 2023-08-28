@@ -1,0 +1,17 @@
+<!-- registro.component.html -->
+<h2>Registro de Usuario</h2>
+<form (ngSubmit)="registrarUsuario()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="nombre" required />
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" [(ngModel)]="correo" required />
+
+  <label for="contraseña">Contraseña:</label>
+  <input type="password" id="contraseña" [(ngModel)]="password" required />
+
+  <button type="submit">Registrarse</button>
+</form>
+<div *ngIf="registradoExitosamente" class="exito-mensaje">
+  Usuario registrado exitosamente. Redireccionando al inicio de sesión...
+</div>
