@@ -24,3 +24,12 @@ En la barra de navegacion aparece un logo, home, producto, carrito, inicion de s
 4. Configurar las Rutas
    Abrimos el archivo app-routing.module.ts y configura las rutas correspondientes para cada enlace en la barra de navegación
 5. Agrega estilos CSS para dar estilo a tu barra de navegación según tus preferencias de diseño.
+
+CREAR UN HOME
+
+1. Crear un Componente para la Página de Inicio (Home) y agrega el componente a app-routing.module.ts
+   ng generate component home
+2. Diseñar la Página de Inicio
+   Instalamos la libreria de bootstrap
+   ng add ngx-bootstrap
+3. Integrar el Carrusel de Imágenes
