@@ -11,6 +11,11 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './registro/registro.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductoComponent } from './producto/producto.component';
+import { ProductosPorCategoriaComponent } from './productos-por-categoria/productos-por-categoria.component';
+import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
+import { EdicionProductoComponent } from './edicion-producto/edicion-producto.component';
+import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     InicioSesionComponent,
     RegistroComponent,
+    ProductoComponent,
+    ProductosPorCategoriaComponent,
+    DetallesProductoComponent,
+    EdicionProductoComponent,
+    CarritoComprasComponent,
   ],
   imports: [
     BrowserModule,

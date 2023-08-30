@@ -1,0 +1,24 @@
+<div *ngIf="producto">
+  <h2>Detalles del Producto</h2>
+  <div class="producto-details">
+    <div class="imagen-container">
+      <img [src]="producto.imagen" alt="{{ producto.nombre }}" />
+    </div>
+    <div class="info-container">
+      <h3>{{ producto.nombre }}</h3>
+      <p>Categoría: {{ producto.categoria }}</p>
+      <p>
+        Precio: {{ producto.precio | currency : "USD" : "symbol" : "1.2-2" }}
+      </p>
+      <p>Descripción: {{ producto.descripcion }}</p>
+      <button (click)="agregarAlCarrito(producto)">Agregar al carrito</button>
+      <button (click)="borrarProducto(producto.id)">Borrar Producto</button>
+
+      <!-- Agrega otros botones o enlaces para acciones adicionales -->
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!producto">
+  <p>El producto no se encontró.</p>
+</div>
