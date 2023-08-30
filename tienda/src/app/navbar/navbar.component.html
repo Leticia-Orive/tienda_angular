@@ -4,7 +4,9 @@
   </a>
   <a routerLink="/home">Home</a>
   <a routerLink="/productos">Productos</a>
-  <a [routerLink]="'/edicion-producto/' + producto?.id">Editar</a>
+  <a [routerLink]="'/edicion-producto/' + (producto?.id || '')">Editar</a>
+  <!-- Enlace para ver el producto -->
+  <a [routerLink]="'/producto/' + (producto?.id || '')">Ver Detalles</a>
   <a routerLink="/carrito">Carrito</a>
   <a routerLink="/inicio-sesion">Iniciar Sesión</a>
   <a routerLink="/registro">Registrarse</a>

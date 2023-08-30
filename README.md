@@ -101,37 +101,40 @@ CREAR PRODUCTOS
     5.Mostrar los Detalles del Producto
     3.2 Editar Producto:
 
-            Agrega un enlace o botón en cada producto que lleve a la página de edición del producto.
-            Crea un componente llamado EdicionProductoComponent para editar los detalles del producto.
-            En el componente de edición, muestra un formulario prellenado con los detalles actuales del producto y permite actualizarlos.
-            1.Crear Componente EdicionProducto
-            2.Definir la Ruta de Edición de Productos
-            3.Obtener Producto para Edición
-            4.Mostrar Formulario de Edición
-            5.Actualizar Producto
-        3.3 Borrar Producto:
+             Agrega un enlace o botón en cada producto que lleve a la página de edición del producto.
+             Crea un componente llamado EdicionProductoComponent para editar los detalles del producto.
+             En el componente de edición, muestra un formulario prellenado con los detalles actuales del producto y permite actualizarlos.
+             1.Crear Componente EdicionProducto
+             2.Definir la Ruta de Edición de Productos
+             3.Obtener Producto para Edición
+             4.Mostrar Formulario de Edición
+             5.Actualizar Producto
 
-            Agrega un botón de borrado en cada producto que permita eliminarlo.
-            Implementa una función en tu servicio ProductoService para borrar un producto por su ID.
-            Al confirmar la eliminación, llama a la función del servicio y actualiza la lista de productos.
-        3.4 Agregar al Carrito:
+    3.3 Borrar Producto:
 
-            Agrega un botón de "Agregar al Carrito" en cada producto.
-            Implementa una función en tu servicio CarritoService para agregar productos al carrito.
-            Cuando el usuario haga clic en "Agregar al Carrito", llama a la función del servicio para agregar el producto.
-            1.Creación del Servicio de Carrito
-            2.Implementación en el Componente Producto
-            3.Implementación en el Servicio de Carrito
-        3.5 Visualizar el Carrito:
+             Agrega un botón de borrado en cada producto que permita eliminarlo.
+             Implementa una función en tu servicio ProductoService para borrar un producto por su ID.
+             Al confirmar la eliminación, llama a la función del servicio y actualiza la lista de productos.
 
-            En tu componente de barra de navegación, agrega un enlace al componente CarritoComprasComponent que mostrará los productos en el carrito.
-            En el componente de carrito, muestra los productos que el usuario ha agregado, junto con opciones para eliminar o modificar cantidades.
-            1. Creación del Componente CarritoComprasComponent
-            2. Agregar Enlace en la Barra de Navegación
-            3. Mostrar los Productos en el Carrito
-            4.Opciones para Eliminar o Modificar Cantidades
+    3.4 Agregar al Carrito:
 
-4.          Vender Productos: Supongo que con "vender" te refieres a completar una transacción de compra de un producto. Esto generalmente implica la gestión del carrito de compras y la generación de pedidos. La implementación de esta funcionalidad puede ser bastante extensa y requiere manejar aspectos como el estado del carrito, la generación de pedidos y la actualización de inventario.
+             Agrega un botón de "Agregar al Carrito" en cada producto.
+             Implementa una función en tu servicio CarritoService para agregar productos al carrito.
+             Cuando el usuario haga clic en "Agregar al Carrito", llama a la función del servicio para agregar el producto.
+             1.Creación del Servicio de Carrito
+             2.Implementación en el Componente Producto
+             3.Implementación en el Servicio de Carrito
+
+    3.5 Visualizar el Carrito:
+
+             En tu componente de barra de navegación, agrega un enlace al componente CarritoComprasComponent que mostrará los productos en el carrito.
+             En el componente de carrito, muestra los productos que el usuario ha agregado, junto con opciones para eliminar o modificar cantidades.
+             1. Creación del Componente CarritoComprasComponent
+             2. Agregar Enlace en la Barra de Navegación
+             3. Mostrar los Productos en el Carrito
+             4.Opciones para Eliminar o Modificar Cantidades
+
+4.  Vender Productos: Supongo que con "vender" te refieres a completar una transacción de compra de un producto. Esto generalmente implica la gestión del carrito de compras y la generación de pedidos. La implementación de esta funcionalidad puede ser bastante extensa y requiere manejar aspectos como el estado del carrito, la generación de pedidos y la actualización de inventario.
     4.1. Confirmación de Compra: Cuando el usuario está listo para comprar los productos en su carrito, puedes implementar un botón de "Confirmar Compra" en la página del carrito. Al hacer clic en este botón, se puede mostrar un mensaje de confirmación y luego proceder con el proceso de venta.
     4.2 Generación de Pedido: Después de la confirmación de compra, debes generar un pedido que incluya los detalles de los productos, la información del usuario y otra información relevante. Puedes crear un servicio de pedidos para manejar esta funcionalidad. El servicio de pedidos podría tener métodos para crear un nuevo pedido y guardar los detalles del pedido en una base de datos o en algún otro almacenamiento.
     4.3 Actualizar Inventario: Antes de completar la venta, es importante verificar si hay suficiente inventario disponible para los productos en el carrito. Si es así, puedes actualizar el inventario restando las cantidades de los productos vendidos.
@@ -139,6 +142,7 @@ CREAR PRODUCTOS
     4.5 Limpiar el Carrito: Después de completar una venta, es una buena práctica limpiar el carrito, eliminando los productos que se han vendido.
     4.6 Historial de Pedidos: Puedes implementar una página donde los usuarios puedan ver su historial de pedidos anteriores. Esto puede requerir la implementación de una nueva vista y lógica para mostrar los detalles de los pedidos anteriores.
     4.7 Seguridad: Asegúrate de manejar la seguridad adecuadamente, especialmente cuando se trata de procesar pagos y almacenar información confidencial del usuario.
+
 5.  CONEXION A MYSQL
 
     1.  instalamos mysql
