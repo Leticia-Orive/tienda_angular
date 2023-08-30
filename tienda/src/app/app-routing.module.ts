@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './registro/registro.component';
@@ -7,6 +7,8 @@ import { ProductosPorCategoriaComponent } from './productos-por-categoria/produc
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import { EdicionProductoComponent } from './edicion-producto/edicion-producto.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
+import { NgModule } from '@angular/core';
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -18,3 +20,9 @@ const routes: Routes = [
   { path: 'productos/:id', component: DetallesProductoComponent },
   { path: 'edicion-producto/:id', component: EdicionProductoComponent },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

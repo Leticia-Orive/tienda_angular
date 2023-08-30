@@ -131,7 +131,7 @@ CREAR PRODUCTOS
             3. Mostrar los Productos en el Carrito
             4.Opciones para Eliminar o Modificar Cantidades
 
-4.        Vender Productos: Supongo que con "vender" te refieres a completar una transacción de compra de un producto. Esto generalmente implica la gestión del carrito de compras y la generación de pedidos. La implementación de esta funcionalidad puede ser bastante extensa y requiere manejar aspectos como el estado del carrito, la generación de pedidos y la actualización de inventario.
+4.          Vender Productos: Supongo que con "vender" te refieres a completar una transacción de compra de un producto. Esto generalmente implica la gestión del carrito de compras y la generación de pedidos. La implementación de esta funcionalidad puede ser bastante extensa y requiere manejar aspectos como el estado del carrito, la generación de pedidos y la actualización de inventario.
     4.1. Confirmación de Compra: Cuando el usuario está listo para comprar los productos en su carrito, puedes implementar un botón de "Confirmar Compra" en la página del carrito. Al hacer clic en este botón, se puede mostrar un mensaje de confirmación y luego proceder con el proceso de venta.
     4.2 Generación de Pedido: Después de la confirmación de compra, debes generar un pedido que incluya los detalles de los productos, la información del usuario y otra información relevante. Puedes crear un servicio de pedidos para manejar esta funcionalidad. El servicio de pedidos podría tener métodos para crear un nuevo pedido y guardar los detalles del pedido en una base de datos o en algún otro almacenamiento.
     4.3 Actualizar Inventario: Antes de completar la venta, es importante verificar si hay suficiente inventario disponible para los productos en el carrito. Si es así, puedes actualizar el inventario restando las cantidades de los productos vendidos.
@@ -140,7 +140,20 @@ CREAR PRODUCTOS
     4.6 Historial de Pedidos: Puedes implementar una página donde los usuarios puedan ver su historial de pedidos anteriores. Esto puede requerir la implementación de una nueva vista y lógica para mostrar los detalles de los pedidos anteriores.
     4.7 Seguridad: Asegúrate de manejar la seguridad adecuadamente, especialmente cuando se trata de procesar pagos y almacenar información confidencial del usuario.
 5.  CONEXION A MYSQL
+
     1.  instalamos mysql
         npm install mysql2
     2.  Importar la Biblioteca y Configurar la Conexión
         Crea un archivo donde configurarás la conexión a la base de datos. Por ejemplo, puedes llamarlo db.js
+
+6.  Corregir los errores del nav para que se me puedan ver todas las url
+    En el app-routing.module.ts hay que añadir esto:
+    @NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+    })
+    En el app.module.ts hay que importar
+    import { AppRoutingModule } from './app-routing.module';
+    imports: [
+    AppRoutingModule,
+    ]

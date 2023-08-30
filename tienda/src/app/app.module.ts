@@ -16,10 +16,12 @@ import { ProductosPorCategoriaComponent } from './productos-por-categoria/produc
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import { EdicionProductoComponent } from './edicion-producto/edicion-producto.component';
 import { CarritoComprasComponent } from './carrito-compras/carrito-compras.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+
     NavbarComponent,
     HomeComponent,
     InicioSesionComponent,
@@ -32,6 +34,7 @@ import { CarritoComprasComponent } from './carrito-compras/carrito-compras.compo
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     RouterModule.forRoot([]),
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
